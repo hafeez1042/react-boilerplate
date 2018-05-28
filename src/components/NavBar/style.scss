@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+:local(.style) {
+  border-bottom: solid thin $primary-border-color;
+  text-align: center;
+  padding: 10px;
+
+  .nav-item {
+    padding: 0 10px;
+    text-decoration: none;
+  }
+}

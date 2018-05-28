@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+:local(.style) {
+  color: $primary-text-color;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 25px 0;
+  background-color: $primary-bg-color;
+}
