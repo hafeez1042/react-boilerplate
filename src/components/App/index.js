@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 
+import { style } from './style.scss';
 class App extends Component {
   render() {
     return (
-      <h1>React Simple Boilerplate!!</h1>
+      <div className={`${style}`}>
+        <h1>React Simple Boilerplate!!</h1>
+      </div>
     );
   }
 }

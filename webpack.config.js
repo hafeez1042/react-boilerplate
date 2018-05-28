@@ -17,8 +17,14 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
-      }
-
+      }, {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'postcss-loader',
+        ],
+      },
     ]
   },
   plugins: [
