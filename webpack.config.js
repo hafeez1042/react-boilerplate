@@ -4,7 +4,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.tsx',
+  resolve: {
+    extensions: [ '.tsx', '.ts', '.js' ]
+  },
   output: {
     path: path.join(__dirname, '/dist'), // eslint-disable-line
     filename: 'bundle.js'
@@ -12,7 +15,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        // test: /\.js$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'

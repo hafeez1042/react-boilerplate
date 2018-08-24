@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { style } from './style.scss';
+const { style } = require('./style.scss');
 
 export default (props) => {
   return (

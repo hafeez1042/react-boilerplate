@@ -4,7 +4,7 @@ import NavBar from  '../NavBar';
 import Footer from  '../Footer';
 
 import '../../styles/global.scss'
-import { style } from './style.scss';
+const { style } = require('./style.scss');
 
 export default ({children}) => {
   return (
